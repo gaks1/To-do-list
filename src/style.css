@@ -1,0 +1,75 @@
+div {
+    padding: 0 2%;
+}
+
+.to-do-section {
+    border: 3px solid black;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.completed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(206, 206, 206, 0.559);
+}
+
+input::placeholder {
+    font-style: italic;
+}
+
+p,
+h4 {
+    margin: 0;
+}
+
+input[type=text] {
+    border: none;
+    width: 99%;
+    font-style: italic;
+    height: 36px;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+}
+
+.completed,
+.title {
+    height: 36px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+span {
+    color: rgb(94, 94, 94);
+    ;
+}
+
+.input {
+    display: flex;
+}
+
+.input span {
+    padding-top: 3px;
+}
+
+.task {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task-check{
+    padding: 0;
+}
