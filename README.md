@@ -80,7 +80,7 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-- **[CRUD functionality ]**- allow tasks to be created, updated and deleted.
+- **[task interaction ]**- allow tasks to be checked complete and those checked to be deleted.
 
 
 
@@ -199,7 +199,7 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **[clear completed tasks]**
+- **[Make the webpage live]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
