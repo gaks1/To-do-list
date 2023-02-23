@@ -99,3 +99,8 @@ button {
   border: none;
   outline: none;
 }
+
+.complete{
+  width: 100%;
+  height: 100%;
+}
