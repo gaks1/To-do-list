@@ -12,11 +12,11 @@ const divtasks = document.querySelector('.tasks');
 const addTask = (task) => {
   const div = document.createElement('div');
   div.classList.add('task');
-  div.innerHTML = `<div class = "task-check">
+  div.innerHTML = `<div class = "task-check margin">
                     <input type="checkbox" id="${task.index}" ${task.completed ? 'checked' : ''}>
                     <label for="${task.index}">${task.description}</label>
                     </div>
-                    <span class="material-symbols-outlined">more_vert</span>`;
+                    <span class="material-symbols-outlined margin">more_vert</span>`;
   divtasks.appendChild(div);
 };
 
