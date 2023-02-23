@@ -16,6 +16,7 @@ const deleteTask = (id, taskDivs) => {
     task.index = i;
     i += 1;
     addTask(task);
+    storeTask();
   });
 };
 
