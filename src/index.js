@@ -3,7 +3,10 @@ import deleteTask from './modules/deletetask.js';
 import editTask from './modules/edittask.js';
 import enterATask from './modules/entertask.js';
 import './style.css';
-import { tasks, enterTask, divtasks } from './modules/selector.js';
+import {
+  tasks, enterTask, divtasks, clearCompleted,
+} from './modules/selector.js';
+import { checked, buttonClear } from './modules/clearComplete.js';
 
 enterTask.addEventListener('keyup', (e) => {
   enterATask(e);
@@ -42,4 +45,12 @@ divtasks.addEventListener('blur', () => {
 
 divtasks.addEventListener('click', (e) => {
   editTask(e);
+});
+
+divtasks.addEventListener('click', (e) => {
+  checked(e);
+});
+
+clearCompleted.addEventListener('click', () => {
+  buttonClear();
 });
