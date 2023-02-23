@@ -88,3 +88,13 @@ span {
 .task-check {
   padding: 0;
 }
+
+.yellow {
+  background-color: yellow;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
