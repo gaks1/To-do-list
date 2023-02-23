@@ -1,25 +1,45 @@
+import addTask from './modules/addTask.js';
+import deleteTask from './modules/deletetask.js';
+import editTask from './modules/edittask.js';
+import enterATask from './modules/entertask.js';
 import './style.css';
+import { tasks, enterTask, divtasks } from './modules/selector.js';
 
-const tasks = [
-  { description: 'Walk the dog', completed: false, index: 0 },
-  { description: 'Buy groceries', completed: false, index: 1 },
-  { description: 'Do laundry', completed: false, index: 2 },
-  { description: 'Call mom', completed: false, index: 3 },
-];
-
-const divtasks = document.querySelector('.tasks');
-
-const addTask = (task) => {
-  const div = document.createElement('div');
-  div.classList.add('task');
-  div.innerHTML = `<div class = "task-check margin">
-                    <input type="checkbox" id="${task.index}" ${task.completed ? 'checked' : ''}>
-                    <label for="${task.index}">${task.description}</label>
-                    </div>
-                    <span class="material-symbols-outlined margin">more_vert</span>`;
-  divtasks.appendChild(div);
-};
+enterTask.addEventListener('keyup', (e) => {
+  enterATask(e);
+});
 
 tasks.forEach((task) => {
   addTask(task);
+});
+
+divtasks.addEventListener('click', (e) => {
+  if (e.target.nodeName === 'BUTTON') {
+    const taskDivs = document.querySelectorAll('.task');
+    const { id } = e.target;
+    if (e.target.textContent === 'delete') {
+      deleteTask(id, taskDivs);
+    }
+    taskDivs.forEach((div) => {
+      const bt = div.querySelector('.dot');
+      bt.textContent = 'more_vert';
+      e.target.textContent = 'delete';
+      div.style.backgroundColor = 'white';
+    });
+    const taskDiv = e.target.closest('.task');
+    taskDiv.style.backgroundColor = 'yellow';
+  }
+});
+
+divtasks.addEventListener('blur', () => {
+  const taskDivs = document.querySelectorAll('.task');
+  taskDivs.forEach((div) => {
+    const bt = div.querySelector('.dot');
+    bt.textContent = 'more_vert';
+    div.style.backgroundColor = 'white';
+  });
+}, true);
+
+divtasks.addEventListener('click', (e) => {
+  editTask(e);
 });
