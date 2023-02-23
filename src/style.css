@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.margin {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.to-do-section {
+  box-shadow: 0 0 20px 0 #cccbcbb8;
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 3px;
+}
+
+.completed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(249 245 245 / 75%);
+}
+
+input::placeholder {
+  font-style: italic;
+}
+
+p,
+h4 {
+  margin: 0;
+}
+
+p {
+  color: grey;
+}
+
+input[type=text] {
+  border: none;
+  width: 99%;
+  font-style: italic;
+  height: 36px;
+}
+
+input:focus {
+  border: none;
+  outline: none;
+}
+
+.completed,
+.title {
+  height: 36px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #d8d4d4;
+}
+
+span {
+  color: rgb(94, 94, 94);
+}
+
+.input {
+  display: flex;
+  border-bottom: 1px solid #d8d4d4;
+}
+
+.input span {
+  padding-top: 3px;
+}
+
+.task {
+  height: 36px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #d8d4d4;
+}
+
+.task-check {
+  padding: 0;
+}
