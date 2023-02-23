@@ -94,6 +94,7 @@ span {
 }
 
 button {
+  font-family: 'Open Sans', sans-serif;
   background-color: transparent;
   border: none;
   outline: none;

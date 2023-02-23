@@ -5,7 +5,7 @@ import storeTask from './storetask.js';
 const enterATask = (e) => {
   if (e.key === 'Enter') {
     const task = {
-      index: tasks.length,
+      index: tasks.length + 1,
       description: enterTask.value,
       completed: false,
     };
