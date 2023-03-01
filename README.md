@@ -171,7 +171,7 @@ Example command:
 
 You can deploy this project using:
 
-github pages.
+[github pages](https://gaks1.github.io/To-do-list/dist/)
 
 <!--
 Example:
