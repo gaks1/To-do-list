@@ -7,7 +7,6 @@ const deleteTask = (id, taskDivs) => {
     tasks.pop();
   }
   tasks.splice(id - 1, 1);
-  storeTask();
   taskDivs.forEach((taskDiv) => {
     taskDiv.parentNode.removeChild(taskDiv);
   });
